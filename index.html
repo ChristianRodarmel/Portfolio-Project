@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Endbuild here -->
+<!-- Need font here Google fonts options-->
+    
+    
+    <title>Catty Corner Cafe</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <!-- Input an img(src="img/whatever image.png") tag here with class "img-fluid"-->
+                </div>
+                <div class="col">
+                    <h1>Catty Corner Cafe </h1>
+                    <h2>Paws with a cause</h2>
+                </div>
+                <div class="mt-4 col col-md-4 col-xl-2">
+                    <button type="button" class="btn btn-primary" id="reserveButton">Reserve A Session Today</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Reservation time slots</h3>
+                    <button type="button" class="close text-light" data-dismiss="modal">&times; </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="reserveForm">
+                            <div class="row">
+                                <label class="col-sm-6" for="numberOfPeople">Number of People</label>
+                                <div class="col">
+                                    <select class="form-control" id="numPeople" name="numPeople">
+                                        <option>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6" for="date">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6" for="numberOfHours">Number of Hours</label>
+                                <small id="hoursTotal" class="form-text text-muted">Max No. of Hours is 3</small>
+                                <div class="col">
+                                    <select class="form-control" id="numPeople" name="numPeople">
+                                        <option>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h5>Links</h5>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sites</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Social</h5>
+            <a href="http://instagram.com/">Instagram</a>
+            <a href="http://facebook.com/">Facebook</a>
+            <a href="http://twitter.com/">Twitter</a>
+            <a href="http://youtube.com/">YouTube</a>
+        </div>
+        <div>
+            Tel: 1-206-555-1234<br />
+            Email: campsites@nucamp.co
+        </div>
+    </footer>
+
+
+    <!-- JQuery must come first, then Popper.js, then the Bootstrap Javascript plugins. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"> </script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"> </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
